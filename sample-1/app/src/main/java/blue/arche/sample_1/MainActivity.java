@@ -203,10 +203,12 @@ public class MainActivity extends Activity {
 
         //Make the intent call to transfer to another actiivty
         // to  the store Activity
-      //  Toast.makeText(MainActivity.this,"Identified"+companyName, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(MainActivity.this,"Identified"+companyName, Toast.LENGTH_SHORT).show();
         Intent storesintent=new Intent(MainActivity.this,StoreActivity.class);
         storesintent.putExtra("BRAND_NAME",companyName);
         startActivity(storesintent);
+
+
     }
     private Camera.Size getOptimalPreviewSize(List<Camera.Size> sizes, int w, int h) {
 

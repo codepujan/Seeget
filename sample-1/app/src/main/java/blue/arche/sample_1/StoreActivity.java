@@ -40,6 +40,10 @@ public class StoreActivity extends FragmentActivity {
             activeArrayList=ModelsData.getNikeItem();
         }else if(getIntent().getExtras().getString("BRAND_NAME").equals("North Face Jacket")){
             activeArrayList=ModelsData.getNorthFaceItems();
+        }else if(getIntent().getExtras().getString("BRAND_NAME").equals("UnderArmor")){
+            activeArrayList=ModelsData.getUnderArmorItems();
+        }else if(getIntent().getExtras().getString("BRAND_NAME").equals("NikeCap")){
+            activeArrayList=ModelsData.getNikeCaps();
         }
 
         NUM_PAGES=activeArrayList.size();
